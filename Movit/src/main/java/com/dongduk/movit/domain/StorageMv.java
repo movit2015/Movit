@@ -1,10 +1,7 @@
 package com.dongduk.movit.domain;
 
-import java.io.Serializable;
-
-
 @SuppressWarnings("serial")
-public class StorageMv implements Serializable {
+public class StorageMv{
 
   /* Private Fields */
 	private int storageIdx;
@@ -14,9 +11,23 @@ public class StorageMv implements Serializable {
 	private String s_img;
 	private String s_nation;
 	private String s_time;
-	private double s_rating;
+	private String s_rating;
 	private String s_pubYear;
+	private String s_actor;
+	private String s_genre;
 	
+	public String getS_genre() {
+		return s_genre;
+	}
+	public void setS_genre(String s_genre) {
+		this.s_genre = s_genre;
+	}
+	public String getS_actor() {
+		return s_actor;
+	}
+	public void setS_actor(String s_actor) {
+		this.s_actor = s_actor;
+	}
 	public String getS_pubYear() {
 		return s_pubYear;
 	}
@@ -66,10 +77,10 @@ public class StorageMv implements Serializable {
 	public void setS_time(String s_time) {
 		this.s_time = s_time;
 	}
-	public double getS_rating() {
+	public String getS_rating() {
 		return s_rating;
 	}
-	public void setS_rating(double s_rating) {
+	public void setS_rating(String s_rating) {
 		this.s_rating = s_rating;
 	}
  

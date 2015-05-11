@@ -1,5 +1,6 @@
 package com.dongduk.movit.controller;
 
+import java.io.OutputStream;
 import java.util.Calendar;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class viewMainController {
 
 	@RequestMapping("/main.do")
-	public ModelAndView hello() {
+	public ModelAndView main() {
+		System.out.println("viewMainController 들어옴");
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("main");
 		mav.addObject("greeting", getGreeting());

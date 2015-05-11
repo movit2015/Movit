@@ -6,21 +6,6 @@
     <param-value>classpath:spring/application-config.xml</param-value>
   </context-param>
   
-  <context-param>
-    <param-name>webAppRootKey</param-name>
-    <param-value>petstore.root</param-value>
-  </context-param>
-  <context-param>
-    <param-name>log4jConfigLocation</param-name>
-    <param-value>/WEB-INF/log4j.properties</param-value>
-  </context-param>
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value> 
-    	classpath:spring/dataAccessContext-local-jdbc.xml 
-       	classpath:spring/applicationContext.xml</param-value>
-  </context-param>
-  
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>

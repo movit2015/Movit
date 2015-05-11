@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.dongduk.movit.dao.MvSelectDao;
 import com.dongduk.movit.domain.Member;
 import com.dongduk.movit.domain.StorageMv;
 import com.dongduk.movit.domain.TasteGenre;
@@ -16,16 +17,13 @@ import com.dongduk.movit.jdbc.JdbcMypageDao;
 @Service
 
 public class MovitImpl implements MovitFacade{
-	@Autowired
-	private JdbcMvSelectDao mvSelectDao;
-	
-	@Autowired
-	private JdbcMypageDao mypageDao;
+	private MvSelectDao mvSelectDao;
 
 	@Override
 	public void insertStorage(StorageMv s_mv) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("MovitImpl");
+		mvSelectDao.insertStorage(s_mv);
 	}
 
 	@Override

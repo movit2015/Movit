@@ -1,4 +1,5 @@
 package com.dongduk.movit.domain;
+
 @SuppressWarnings("serial")
 public class TasteGenre {
 	/* Private Fields */

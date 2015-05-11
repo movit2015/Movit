@@ -7,15 +7,6 @@
     
     <!-- Uncomment and add your base-package here:
          <context:component-scan
-            base-package="org.springframework.samples.dservice"/>  -->
+            base-package="org.springframework.samples.service"/>  -->
 
 </beans>
-
-<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="locations">
-			<list>
-				<value>classpath:mail.properties</value>
-				<value>classpath:jdbc.properties</value>
-			</list>
-		</property>
-	</bean>

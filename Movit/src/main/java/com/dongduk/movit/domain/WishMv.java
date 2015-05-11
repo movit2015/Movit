@@ -1,6 +1,5 @@
 package com.dongduk.movit.domain;
 
-import java.io.Serializable;
 @SuppressWarnings("serial")
 public class WishMv {
 	/* Private Fields */

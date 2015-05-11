@@ -1,6 +1,5 @@
 package com.dongduk.movit.domain;
 
-
 @SuppressWarnings("serial")
 public class Member {
 	/* Private Fields */
